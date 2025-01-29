@@ -3,13 +3,17 @@ A THC control board that can connect to a Expatria Flexihal for controlling a pl
 
 
 `thc_divider_board` directory contains a Kicad PCB designed to isolate the raw plasma cutter 
-measurements from the MCU. 
+measurements from the MCU. The PCBs were designed with Oshpark in mind, in particular the
+"After Dark" style just for fun. As such, there is minimal silkscreening.
 
-It is intended to be powered by a plasma cutter with an internal 24VDC power supply within 
-the plasma cutter. The plasma cutter's power supply is protected by a 6KVDC DC-DC converter. 
-The low-side of the isolation amplifier is powered by another isolation DC-DC converter fed 
-from the main DC-DC converter. This secondary 5V DC-DC converter also provides power for the
-MCU.
+![front](thc_divider_board/front.png)
+
+![front](thc_divider_board/back.png)
+
+The board is intended to be powered by an internal 24VDC power supply within the plasma cutter. The 
+plasma cutter's power supply is protected by a 6KVDC reinforced DC-DC converter. The low-side of the 
+isolation amplifier is powered by another isolation DC-DC converter fed from the main DC-DC 
+converter. This secondary 5V DC-DC converter also provides power for the MCU.
 
 The MCU is intended to be something like an Arduino Nano. The signal is connected to the ADC. 
 The MCU is connected to a https://www.dfrobot.com/product-2588.html UART Fibre Optic Transceiver
