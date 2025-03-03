@@ -44,7 +44,7 @@ The `teensy_quadrature_encoder` directory contains the sketch for a Teensy 4 to 
 serial to quadrature encoding. The Teensy 4 was chosen for its high speed and ability to measure nanoseconds 
 for precise timings.  The quadrature encoding is then used to interface with a Expatria FlexiHAL and by 
 extension LinuxCNC for torch height control. Similarly, this Teensy will also have a UART Fibre Optic 
-Transceiver to talk to the Nano
+Transceiver to talk to the Micro
 
 BOM:
 
