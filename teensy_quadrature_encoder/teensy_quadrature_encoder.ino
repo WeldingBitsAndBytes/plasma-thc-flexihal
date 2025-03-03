@@ -63,8 +63,6 @@ namespace cycles64
 }
 
 
-
-
 #define pinApos 3
 #define pinAneg 4
 #define pinBpos 10
@@ -90,7 +88,6 @@ boolean newData = false;
 void setup() {
   Serial.begin(8000000);
   //while (!Serial);
-
   // Initialize the output pins
   pinMode(pinApos, OUTPUT);
   pinMode(pinAneg, OUTPUT);
@@ -167,14 +164,16 @@ void parseNewData() {
   */
   if (newData == true) {
     newData = false;
+
     int content = (receivedBytes[0]<<8) + receivedBytes[1];
+
+    Serial.println(content);
     if (content != old) {
       old = content;
-      unsigned int frequency = (content * 100) + 10000; // Range from 10khz to 11.23khz
+      
+      unsigned int frequency = (content * 50) + 10000; // Range from 10khz to 110khz
       interval = (1000000.0 / frequency / 4) * 1000.0; // Convert frequency to interval and divide by 4 as we need to do 4 things in a cycle 
-      Serial.print(interval);
-      Serial.print(" - ");
-      Serial.println(frequency);
+      
     }
   }
 }
