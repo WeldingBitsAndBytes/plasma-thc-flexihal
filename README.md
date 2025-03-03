@@ -20,8 +20,7 @@ plasma cutter's power supply is protected by a 6KVDC reinforced DC-DC converter.
 isolation amplifier is powered by another isolation DC-DC converter fed from the main DC-DC 
 converter. This secondary 5V DC-DC converter also provides power for the MCU.
 
-The MCU is intended to be something like an Arduino Nano. Almost any other MCU would work but these
-are cheap, small, and just fine for this application.
+The MCU is intended to be something like an Arduino Micro which has the correct differential ADC hardware.
 
 ## Voltage Sender
 
