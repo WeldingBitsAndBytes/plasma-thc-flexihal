@@ -25,9 +25,7 @@ are cheap, small, and just fine for this application.
 
 ## Nano Voltage Sender
 
-`nano_voltage_sender` contains the sketch for the Arduino Nano. It uses an external Vref voltage source
-to normalize out the voltage for more accurate readings. It uses the 2V reference source to match the
-0-2V output from the THC divider board.
+`voltage_sender` contains the sketch for the Arduino Micro. The Micro is supported as it can do differential ADC measurements
 
 The signal is connected to the ADC. The MCU is connected to a https://www.dfrobot.com/product-2588.html 
 UART Fibre Optic Transceiver
@@ -36,9 +34,8 @@ BOM:
 
 | Part    | Quantity | Notes |
 | -------- | ------- | ----- |
-| Arduino Nano | 1 | Or similar |
+| Arduino Micro | 1 | |
 | UART Fiber Optic Transceiver | 1 | https://www.dfrobot.com/product-2588.html |
-| LM4040 Voltage Reference | 1 | Or similar - eg: https://www.adafruit.com/product/2200 |
 | Arduino Nano Screw Terminal Adapter | 1 | https://store-usa.arduino.cc/products/nano-screw-terminal is really nice |
 | SC Fibre Optic Cable | 1 | Recommend duplex so you can fire a relay for plasma control |
 
