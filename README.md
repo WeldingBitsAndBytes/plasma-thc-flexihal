@@ -23,7 +23,7 @@ converter. This secondary 5V DC-DC converter also provides power for the MCU.
 The MCU is intended to be something like an Arduino Nano. Almost any other MCU would work but these
 are cheap, small, and just fine for this application.
 
-## Nano Voltage Sender
+## Voltage Sender
 
 `voltage_sender` contains the sketch for the Arduino Micro. The Micro is supported as it can do differential ADC measurements
 
